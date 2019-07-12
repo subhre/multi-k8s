@@ -1,5 +1,5 @@
 docker build -t subhre/multi-client:latest -t subhre/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
-dokcer build -t subhre/multi-server:latest -t subhre/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t subhre/multi-server:latest -t subhre/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
 docker build -t subhre/multi-worker:latest -t subhre/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push subhre/multi-client:latest
